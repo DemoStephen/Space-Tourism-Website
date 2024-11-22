@@ -17,6 +17,13 @@ export default {
         "url('./src/assets/destination/background-destination-tablet.jpg')",
       "destination-mobile":
         "url('./src/assets/destination/background-destination-mobile.jpg')",
+
+      "technology-desktop":
+        "url('./src/assets/technology/background-technology-desktop.jpg')",
+      "technology-tablet":
+        "url('./src/assets/technology/background-technology-tablet.jpg')",
+      "technology-mobile":
+        "url('./src/assets/technology/background-technology-mobile.jpg')",
     },
     fontFamily: {
       sans: ['"Bellefair", serif'],
