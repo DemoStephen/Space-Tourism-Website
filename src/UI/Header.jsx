@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
-export default function Header({ home, title, paragraph, children }) {
+export default function Header({
+  home,
+  technology,
+  title,
+  paragraph,
+  children,
+}) {
   return (
-    <header className="text-center lg:text-left lg:w-1/2">
+    <header className={`text-center lg:text-left ${!technology && "lg:w-1/2"}`}>
       <p className="text-xl md:text-2xl uppercase">{paragraph}</p>
       {home ? (
         <h1 className="text-white text-6xl lg:text-8xl uppercase my-2">

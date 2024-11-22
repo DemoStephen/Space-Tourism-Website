@@ -48,7 +48,7 @@ export default function CrewContent() {
           <img
             src={Data.crew[view].images.png}
             alt={Data.crew[view].name}
-            className="w-4/5 lg:w-full m-auto"
+            className="w-4/5 lg:w-full m-auto "
           />
         </div>
       </section>
