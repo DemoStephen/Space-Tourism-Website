@@ -3,9 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
-      "home-desktop": "url('./src/assets/home/background-home-desktop.jpg')",
-      "home-tablet": "url('./src/assets/home/background-home-tablet.jpg')",
-      "home-mobile": "url('./src/assets/home/background-home-mobile.jpg')",
+      "home-desktop": "url('/background-home-desktop.jpg')",
+      "home-tablet": "url('/background-home-tablet.jpg')",
+      "home-mobile": "url('/background-home-mobile.jpg')",
 
       "crew-desktop": "url('./src/assets/crew/background-crew-desktop.jpg')",
       "crew-tablet": "url('./src/assets/crew/background-crew-tablet.jpg')",

@@ -4,7 +4,6 @@ import Destination from "./Pages/Destination";
 import Home from "./Pages/Home";
 import Technology from "./Pages/Technology";
 import Navigation from "./UI/Navigation";
-
 export default function App() {
   const [view, setView] = useState("home");
 

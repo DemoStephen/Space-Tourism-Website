@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [codewithstephen.com/solution/space-tourism-website](https://your-solution-url.com)
-- Live Site URL: [codewithstephen.com/live/space-tourism-website](https://your-live-site-url.com)
+- Solution URL: [codewithstephen.com/solution/space-tourism-website](https://github.com/DemoStephen/Space-Tourism-Website)
+- Live Site URL: [codewithstephen.com/live/space-tourism-website](https://codewithstephenspace-tourism.vercel.app/)
 
 ## My process
 
