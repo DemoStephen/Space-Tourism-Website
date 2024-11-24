@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
+This is a solution to the [Space tourism website challenge on Frontend Mentor](//www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
 ## Table of contents
 
@@ -24,23 +24,25 @@ Users should be able to:
 
 ### Screenshot
 
-![preview](./preview.jpg)
+![preview](/preview.jpg)
 
 ### Links
 
-- Solution URL: [codewithstephen.com/solution/space-tourism-website](https://github.com/DemoStephen/Space-Tourism-Website)
-- Live Site URL: [codewithstephen.com/live/space-tourism-website](https://codewithstephenspace-tourism.vercel.app/)
+- Solution URL: [codewithstephen.com/solution/space-tourism-website](//github.com/DemoStephen/Space-Tourism-Website)
+- Live Site URL: [codewithstephen.com/live/space-tourism-website](//codewithstephenspace-tourism.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Tailwind CSS](https://tailwindcss.com/.com/) - For styles
+- [React](//reactjs.org/) - JS library
+- [Tailwind CSS](//tailwindcss.com/.com/) - For styles
 
 ## Author
 
-- Website - [codewithstephen.com](https://codewithstephen.com)
-- Frontend Mentor - [@codewithstephen](https://www.frontendmentor.io/profile/codewithstephen)
-- Twitter - [@codewithstephen](https://www.twitter.com/codewithstephen)
+- Twitter - [@codewithstephen](//www.twitter.com/codewithstephen)
+- Facebook -[Stephen Adewale Nifemi](//web.facebook.com/Inventorstephen/)
+- LinkedIn -[@codewithstephen](//www.linkedin.com/in/codewithstephen/)
+- Website - [codewithstephen.com](//codewithstephen.vercel.app)
+- Frontend Mentor - [@codewithstephen](//www.frontendmentor.io/profile/codewithstephen)
