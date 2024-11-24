@@ -9,8 +9,8 @@ export default function Destination() {
     <>
       <Picks index="01" text="Pick your destination" />
 
-      <main className="flex justify-between items-center content-center px-[5%] md:px-[10%] flex-col lg:flex-row md:gap-28 gap-8 lg:gap-0">
-        <section className="w-full md:w-1/2 ">
+      <main className="flex justify-between items-center content-center px-[5%] md:px-[10%] flex-col lg:flex-row md:gap-28 gap-8 lg:gap-8">
+        <section className="w-full md:w-1/2 animate-pulse">
           <img
             src={Data.destinations[view].images.png}
             alt={Data.destinations[view].name}

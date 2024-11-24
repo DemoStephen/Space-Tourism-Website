@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import Header from "../UI/Header";
 
-export default function Home() {
+export default function Home({ handleView }) {
   return (
     <>
       <section className="flex justify-between items-center content-center px-[5%] md:px-[10%] py-10 md:py-20 flex-col lg:flex-row md:gap-28 gap-16 lg:gap-0">
@@ -10,7 +12,10 @@ export default function Home() {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </Header>
-        <div className="w-44 h-44 bg-white text-blue-900 uppercase rounded-full flex items-center justify-center hover:scale-125 transition-all hover:bg-blue-300 hover:text-white cursor-pointer">
+        <div
+          onClick={() => handleView((prev) => (prev = "destination"))}
+          className="w-44 h-44 bg-white text-blue-900 uppercase rounded-full flex items-center justify-center hover:scale-125 transition-all hover:bg-blue-300 hover:text-white cursor-pointer"
+        >
           Explore
         </div>
       </section>
