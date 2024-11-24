@@ -4,6 +4,7 @@ import Destination from "./Pages/Destination";
 import Home from "./Pages/Home";
 import Technology from "./Pages/Technology";
 import Navigation from "./UI/Navigation";
+import MeetDev from "./components/MeetDev";
 export default function App() {
   const [view, setView] = useState("home");
 
@@ -25,10 +26,11 @@ export default function App() {
       className={`min-h-screen bg-center bg-cover bg-no-repeat py-8 flex flex-col justify-between ${bgInfo}`}
     >
       <Navigation onChangeView={setView} view={view} />
-      {view === "home" && <Home />}
+      {view === "home" && <Home handleView={setView} />}
       {view === "destination" && <Destination />}
       {view === "crew" && <Crew />}
       {view === "technology" && <Technology />}
+      <MeetDev />
     </main>
   );
 }
