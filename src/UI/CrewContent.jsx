@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../UI/Header";
 import { Data } from "../util/data";
+import SmallDots from "../components/SmallDots";
 export default function CrewContent() {
   const [view, setView] = useState(0);
   useEffect(() => {
@@ -21,26 +22,10 @@ export default function CrewContent() {
           {Data.crew[view].bio}
         </Header>
         <div className="flex items-center content-center justify-center lg:justify-start gap-2 my-8">
-          <span
-            className={`p-2 ${
-              view !== 0 ? "bg-slate-600" : "bg-slate-50"
-            } rounded-full`}
-          ></span>
-          <span
-            className={`p-2 ${
-              view !== 1 ? "bg-slate-600" : "bg-slate-50"
-            } rounded-full`}
-          ></span>
-          <span
-            className={`p-2 ${
-              view !== 2 ? "bg-slate-600" : "bg-slate-50"
-            } rounded-full`}
-          ></span>
-          <span
-            className={`p-2 ${
-              view !== 3 ? "bg-slate-600" : "bg-slate-50"
-            } rounded-full`}
-          ></span>
+          <SmallDots view={view} thisView={0} changeView={setView} />
+          <SmallDots view={view} thisView={1} changeView={setView} />
+          <SmallDots view={view} thisView={2} changeView={setView} />
+          <SmallDots view={view} thisView={3} changeView={setView} />
         </div>
       </section>
       <section>
