@@ -1,10 +1,11 @@
-/* eslint-disable react/prop-types */
 import logo from "../assets/shared/logo.svg";
 import menu from "../assets/shared/icon-hamburger.svg";
 import cancel from "../assets/shared/icon-close.svg";
 import List from "../components/List";
 import { useState } from "react";
-export default function Navigation({ onChangeView, view }) {
+import { NavLink } from "react-router";
+
+export default function Navigation() {
   const [sideBar, setSideBar] = useState(false);
   function handleSideBar() {
     if (sideBar) {
@@ -17,30 +18,38 @@ export default function Navigation({ onChangeView, view }) {
     <nav className="flex items-center content-center justify-between px-[10%] md:pr-[0%]">
       <img src={logo} alt="logo" className="animate-pulse" />
       <ul className="hidden md:flex items-center content-center gap-6 lg:gap-8 backdrop-blur-md lg:pl-28 pr-11 lg:pr-20  text-center md:text-left">
-        <List
-          title="00 Home"
-          page="home"
-          onChangeView={onChangeView}
-          view={view}
-        />
-        <List
-          title="01 Destination"
-          page="destination"
-          onChangeView={onChangeView}
-          view={view}
-        />
-        <List
-          title="02 Crew"
-          page="crew"
-          onChangeView={onChangeView}
-          view={view}
-        />
-        <List
-          title="03 Technology"
-          page="technology"
-          onChangeView={onChangeView}
-          view={view}
-        />
+        <NavLink
+          to="/"
+          className={({ isActive }) => {
+            return isActive ? "border-b-2 border-white" : "";
+          }}
+        >
+          <List title="00 Home" />
+        </NavLink>
+        <NavLink
+          to="/destination"
+          className={({ isActive }) => {
+            return isActive ? "border-b-2 border-white" : "";
+          }}
+        >
+          <List title="01 Destination" />
+        </NavLink>
+        <NavLink
+          to="/crew"
+          className={({ isActive }) => {
+            return isActive ? "border-b-2 border-white" : "";
+          }}
+        >
+          <List title="02 Crew" />
+        </NavLink>
+        <NavLink
+          to="/technology"
+          className={({ isActive }) => {
+            return isActive ? "border-b-2 border-white" : "";
+          }}
+        >
+          <List title="03 Technology" />
+        </NavLink>
       </ul>
       <button className="md:hidden" onClick={handleSideBar}>
         <img src={menu} alt="menu" />
@@ -53,34 +62,38 @@ export default function Navigation({ onChangeView, view }) {
             </button>
           </div>
           <ul className="">
-            <List
-              title="00 Home"
-              page="home"
-              onChangeView={onChangeView}
-              view={view}
-              setSideBar={setSideBar}
-            />
-            <List
-              title="01 Destination"
-              page="destination"
-              onChangeView={onChangeView}
-              view={view}
-              setSideBar={setSideBar}
-            />
-            <List
-              title="02 Crew"
-              page="crew"
-              onChangeView={onChangeView}
-              view={view}
-              setSideBar={setSideBar}
-            />
-            <List
-              title="03 Technology"
-              page="technology"
-              onChangeView={onChangeView}
-              view={view}
-              setSideBar={setSideBar}
-            />
+            <NavLink
+              to="/"
+              className={({ isActive }) => {
+                return isActive ? "border-b-2 border-white" : "";
+              }}
+            >
+              <List title="00 Home" setSideBar={setSideBar} />
+            </NavLink>
+            <NavLink
+              to="/destination"
+              className={({ isActive }) => {
+                return isActive ? "border-b-2 border-white" : "";
+              }}
+            >
+              <List title="01 Destination" setSideBar={setSideBar} />
+            </NavLink>
+            <NavLink
+              to="/crew"
+              className={({ isActive }) => {
+                return isActive ? "border-b-2 border-white" : "";
+              }}
+            >
+              <List title="02 Crew" setSideBar={setSideBar} />
+            </NavLink>
+            <NavLink
+              to="/technology"
+              className={({ isActive }) => {
+                return isActive ? "border-b-2 border-white" : "";
+              }}
+            >
+              <List title="03 Technology" setSideBar={setSideBar} />
+            </NavLink>
           </ul>
         </div>
       )}
